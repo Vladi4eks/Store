@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Validator {
 
+    // Валидация ввода имени
     public static String validateName(Scanner scanner) {
         String str = scanner.nextLine().trim();
         while (str.isEmpty()) {
@@ -18,6 +19,7 @@ public class Validator {
         return str;
     }
 
+    // Валидация ввода количества
     public static int validateQuantityInput(Scanner scanner) {
         while (!scanner.hasNextInt()) {
             String str = scanner.nextLine().trim();
@@ -37,6 +39,7 @@ public class Validator {
         return quantity;
     }
 
+    // Валидация ввода цены
     public static double validatePriceInput(Scanner scanner) {
         while (!scanner.hasNextDouble()) {
             String str = scanner.nextLine().trim();

@@ -39,16 +39,19 @@ public class Client implements Payment, Discount {
         this.price = price;
     }
 
+    // Расчёт платежа, без учета скидки.
     @Override
     public double calcPayment(int quantity, double price) {
         return quantity * price;
     }
 
+    // Расчёт платежа, с учетом скидки.
     @Override
     public double calcPayment(double payment, double discount) {
         return payment - discount;
     }
 
+    // Расчёт суммы скидки.
     @Override
     public double calcDiscount(double payment) {
         return payment * DISCOUNT_RATE / 100;
