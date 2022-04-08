@@ -1,3 +1,7 @@
+import controllers.ClientController;
+import models.Client;
+import views.ClientView;
+
 /**
  * @author Kalashnikov Vladislav
  * @version 1.0.0
