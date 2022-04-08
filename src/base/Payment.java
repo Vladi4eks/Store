@@ -5,6 +5,7 @@ package base;
  * @version 1.0.0
  */
 
+// Интерфейс платежа
 public interface Payment {
 
     double calcPayment(int quantity, double price);
