@@ -8,6 +8,7 @@ import base.Payment;
  * @version 1.0.0
  */
 
+// Применение интерфейсов
 public class Client implements Payment, Discount {
 
     private String name;

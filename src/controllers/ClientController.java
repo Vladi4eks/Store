@@ -14,6 +14,7 @@ public class ClientController {
     Client model;
     ClientView view;
 
+    // Конструктор
     public ClientController(Client model, ClientView view) {
         this.model = model;
         this.view = view;

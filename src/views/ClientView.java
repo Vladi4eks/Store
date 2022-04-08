@@ -22,6 +22,7 @@ public class ClientView {
         this.model = model;
     }
 
+    // Ввод данных
     public void getInputs() {
 
         scanner = new Scanner(System.in);
@@ -44,6 +45,7 @@ public class ClientView {
         scanner.close();
     }
 
+    // Вывод данных
     public void getOutput(String output) {
         System.out.println(output);
     }
